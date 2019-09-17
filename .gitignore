@@ -18,3 +18,28 @@ data/points/human.off_sc.txt
 .idea/
 cmake-build-debug/
 
+# Unused in giotto
+*.txt
+.appveyor.yml
+.travis.yml
+.circleci
+Dockerfile_ubuntu
+biblio/
+data/
+scripts
+src/*.txt
+src/cmake
+src/python
+src/*.cmake.in
+src/Hasse_complex
+src/Persistence_representations
+src/Skeleton_blocker
+src/Toplex_map
+src/patial_searching
+src/Tangential_complex
+src/Witness_complex
+src/Alpha_complex
+src/Bottleneck_distance
+src/Contraction
+src/GudhUI
+src/Nerve_GIC
