@@ -47,7 +47,7 @@ src/Skeleton_blocker
 src/Toplex_map
 src/patial_searching
 src/Tangential_complex
-src/Witness_complex
+# src/Witness_complex
 src/Alpha_complex
 src/Bottleneck_distance
 src/Contraction
