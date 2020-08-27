@@ -23,18 +23,23 @@ namespace Gudhi {
 
 namespace cubical_complex {
 
-template <typename CubicalComplexOptions = Bitmap_cubical_complex_base<double>>
+template<typename CubicalComplexOptions = Bitmap_cubical_complex_base<double>>
 class Cubical_complex_interface : public Bitmap_cubical_complex<CubicalComplexOptions> {
  public:
-  Cubical_complex_interface(const std::vector<unsigned>& dimensions, const std::vector<double>& top_dimensional_cells)
-      : Bitmap_cubical_complex<CubicalComplexOptions>(dimensions, top_dimensional_cells) {}
+  Cubical_complex_interface(const std::vector<unsigned>& dimensions,
+                            const std::vector<double>& top_dimensional_cells)
+  : Bitmap_cubical_complex<CubicalComplexOptions>(dimensions, top_dimensional_cells) {
+  }
 
-  Cubical_complex_interface(const std::vector<unsigned>& dimensions, const std::vector<double>& top_dimensional_cells,
+  Cubical_complex_interface(const std::vector<unsigned>& dimensions,
+                            const std::vector<double>& top_dimensional_cells,
                             const std::vector<bool>& periodic_dimensions)
-      : Bitmap_cubical_complex<CubicalComplexOptions>(dimensions, top_dimensional_cells, periodic_dimensions) {}
+  : Bitmap_cubical_complex<CubicalComplexOptions>(dimensions, top_dimensional_cells, periodic_dimensions) {
+  }
 
   Cubical_complex_interface(const std::string& perseus_file)
-      : Bitmap_cubical_complex<CubicalComplexOptions>(perseus_file.c_str()) {}
+  : Bitmap_cubical_complex<CubicalComplexOptions>(perseus_file.c_str()) {
+  }
 };
 
 }  // namespace cubical_complex
@@ -42,3 +47,4 @@ class Cubical_complex_interface : public Bitmap_cubical_complex<CubicalComplexOp
 }  // namespace Gudhi
 
 #endif  // INCLUDE_CUBICAL_COMPLEX_INTERFACE_H_
+
